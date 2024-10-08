@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "name": "Echo",
+      "proxy": "hahatext",
+      "description": "Gay",
+      "color": "#00FF00",
+      "avatar": "https://i.pinimg.com/originals/2e/eb/98/2eeb9803939b0238299621c4107c3f62.jpg",
+      "account": "737974916539875348"
+    },
+    {
+      "name": "Leyley",
+      "proxy": "text-leyley",
+      "description": null,
+      "color": null,
+      "avatar": "https://cdn.discordapp.com/avatars/737974916539875348/3cd2c1178f52987775d9b6cc48b3c674.webp",
+      "account": "737974916539875348"
+    },
+    {
+      "name": "Guy",
+      "proxy": "guytext",
+      "description": null,
+      "color": null,
+      "avatar": "https://cdn.discordapp.com/avatars/716807015502053436/9d25af7e8c67ab24ff0706ae5cc7b9fb.webp",
+      "account": "716807015502053436"
+    },
+    {
+      "name": "test",
+      "proxy": "texting",
+      "description": "test character",
+      "color": "#0000ff",
+      "avatar": "https://i.pinimg.com/originals/37/1c/d8/371cd85cbf9dce7a83eb54184529710b.jpg",
+      "account": "737974916539875348",
+      "users": [
+        "716807015502053436",
+        "1176562890715693120"
+      ]
+    }
+  ]
+}
