@@ -7,6 +7,10 @@ let db = JSON.parse(fs.readFileSync(dbPath, 'utf-8'));
 const proxyHandler = require('./commands/utility/proxy.js');
 const { activeProxies } = require('./commands/utility/autoproxy.js');
 
+(async () => {
+    await require('./deploy-commands.js')();
+})();
+
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 
 client.commands = new Collection();
