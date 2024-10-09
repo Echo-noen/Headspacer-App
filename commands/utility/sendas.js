@@ -29,9 +29,9 @@ module.exports = {
 
 
         // if (!owner.includes(message.author.id)) {
-        if (message.author.id !== "737974916539875348") {
+        // if (message.author.id !== "737974916539875348") {
             content += `\n-# Message sent by @${message.author.username}`
-        }
+        // }
 
         if (!message.channel.type === 'GUILD_TEXT') {
             await message.reply('This command can only be used in text channels.');

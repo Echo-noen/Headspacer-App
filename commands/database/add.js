@@ -43,17 +43,17 @@ module.exports = {
         const account = interaction.user.id;
 
         if (!proxy.includes('text')) {
-            return interaction.reply('Error: The proxy must contain the word "text".');
+            return interaction.reply({content: 'Error: The proxy must contain the word "text".', ephemeral: true });
         }
 
         if (color && !/^#[0-9A-F]{6}$/i.test(color)) {
-            return interaction.reply('Error: The color must be a valid HEX code (e.g., #FFFFFF).');
+            return interaction.reply({content: 'Error: The color must be a valid HEX code (e.g., #FFFFFF).', ephemeral: true });
         }
 
         const userAvatar = interaction.user.displayAvatarURL({ dynamic: true });
         const finalAvatarUrl = avatarUrl || userAvatar;
 
         db.addEntry(name, proxy, description, color, finalAvatarUrl, account);
-        await interaction.reply(`${name} added to the database!\n${proxy}, ${description}, ${color}.\nAvatar: ${finalAvatarUrl}`);
+        await interaction.reply({ content: `${name} added to the database!\n${proxy}, ${description}, ${color}.\nAvatar: ${finalAvatarUrl}`, ephemeral: true });
     },
 };

@@ -20,6 +20,7 @@ module.exports = {
                     { name: 'Proxy', value: 'proxy' },
                     { name: 'Description', value: 'description' },
                     { name: 'Color', value: 'color' },
+                    { name: 'Avatar', value: 'avatar' },
                     { name: 'Users', value: 'users' }
                 ))
         .addStringOption(option =>
@@ -47,7 +48,7 @@ module.exports = {
             return;
         }
 
-        if (!['name', 'proxy', 'description', 'color', 'users'].includes(field)) {
+        if (!['name', 'proxy', 'description', 'color', 'avatar', 'users'].includes(field)) {
             await interaction.reply({ content: `Invalid field specified. Choose one of the options.`, ephemeral: true });
             return;
         }

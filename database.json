@@ -1,40 +1,28 @@
 {
   "data": [
     {
-      "name": "Echo",
-      "proxy": "hahatext",
-      "description": "Gay",
-      "color": "#00FF00",
-      "avatar": "https://i.pinimg.com/originals/2e/eb/98/2eeb9803939b0238299621c4107c3f62.jpg",
+      "name": "Khoi",
+      "proxy": "text-Khoi",
+      "description": "De facto host, gay",
+      "color": "#4a3b75",
+      "avatar": "https://i.pinimg.com/236x/4d/84/bb/4d84bb59074bf2df411c9cb7f2f0ff2c.jpg",
       "account": "737974916539875348"
     },
     {
-      "name": "Leyley",
-      "proxy": "text-leyley",
-      "description": null,
-      "color": null,
-      "avatar": "https://cdn.discordapp.com/avatars/737974916539875348/3cd2c1178f52987775d9b6cc48b3c674.webp",
+      "name": "Callahan",
+      "proxy": "text-Callahan",
+      "description": "De jure host, a bit less gay but we're getting there",
+      "color": "#9e7ddb",
+      "avatar": "https://i.pinimg.com/564x/3e/87/a0/3e87a02173418f8dda69cae9b25342ab.jpg",
       "account": "737974916539875348"
     },
     {
-      "name": "Guy",
-      "proxy": "guytext",
-      "description": null,
-      "color": null,
-      "avatar": "https://cdn.discordapp.com/avatars/716807015502053436/9d25af7e8c67ab24ff0706ae5cc7b9fb.webp",
-      "account": "716807015502053436"
-    },
-    {
-      "name": "test",
-      "proxy": "texting",
-      "description": "test character",
-      "color": "#0000ff",
-      "avatar": "https://i.pinimg.com/originals/37/1c/d8/371cd85cbf9dce7a83eb54184529710b.jpg",
-      "account": "737974916539875348",
-      "users": [
-        "716807015502053436",
-        "1176562890715693120"
-      ]
+      "name": "Marcus",
+      "proxy": "text-Marc",
+      "description": "Big guy (hot)",
+      "color": "#8a0714",
+      "avatar": "https://i.pinimg.com/564x/80/ac/18/80ac1880eab78f02472bfce4512ba702.jpg",
+      "account": "737974916539875348"
     }
   ]
 }
