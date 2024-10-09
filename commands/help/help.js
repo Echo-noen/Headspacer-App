@@ -10,16 +10,16 @@ module.exports = {
 
         const fields = [
             { name: '/ping', value: 'Replies with Pong.\nIf it throws an error, the bot is offline. Contact the developer(s) in that case.', inline: false },
-            { name: '..sendas', value: 'Resends a message with a specified name using a webhook.\n (Being set as owner removes the bottom message)', inline: false }
+            { name: '..sendas', value: 'Resends a message with a specified name using a webhook.\n (Being set as owner removes the bottom message)', inline: false },
+            { name: '/list', value: 'Lists memebers of the database the user owns or is a user of. Will not work if no entries are found.', inline: false },
         ];
 
         let status = "not set"
 
         if (owner.includes(interaction.user.id)) {
             fields.push(
-                { name: '/add', value: 'Adds an entry to the database. Usage: `/add <name> <proxy> <description> <color> etc.`', inline: false },
-                { name: '/get', value: 'Retrieves entries from the database.', inline: false },
-                { name: '/edit', value: 'Edits an entry of the database. Usage: `/edit <name> <field> <value>\nThis is the only way to let other people use your proxy (if the field is "Users")', inline: false },
+                { name: '/add', value: 'Adds a member to the database. Usage: `/add <name> <proxy> <description> <color> etc.`', inline: false },
+                { name: '/edit', value: 'Edits a member of the database. Usage: `/edit <name> <field> <value>\nThis is the only way to let other people use your proxy (if the field is "Users")', inline: false },
             )
             status = "set"
         }
