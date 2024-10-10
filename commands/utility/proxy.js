@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const dbPath = path.resolve(__dirname, '../../database.json');
 const { activeProxies } = require('./autoproxy.js');
+const { finalization } = require('process');
 
 module.exports = {
     name: 'proxy',
@@ -31,7 +32,7 @@ module.exports = {
         for (const proxyEntry of proxies) {
             const proxyPattern = proxyEntry.proxy.replace('text', '(.*)');
             
-            const regex = new RegExp(`^${proxyPattern}$`, 'i');
+            const regex = new RegExp(`^${proxyPattern}$`);
             
             const match = message.content.match(regex);
             if (match) {
@@ -70,10 +71,15 @@ module.exports = {
                 } else {
                     newContent = content;
                 }
+
+                const userEntry = db.users.find(user => user.account === message.author.id);
+                const tag = userEntry?.tag || '';
+                
+                const finalUsername = tag.replace(/text/g, proxyEntry.name);
                 
                 const webhookOptions = {
                     content: newContent,
-                    username: proxyEntry.name,
+                    username: finalUsername || proxyEntry.name,
                     avatarURL: proxyEntry.avatar,
                 };
 

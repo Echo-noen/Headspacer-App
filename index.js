@@ -116,9 +116,14 @@ client.on('messageCreate', async message => {
                 newContent = content;
             }
 
+            const userEntry = db.users.find(user => user.account === message.author.id);
+            const tag = userEntry?.tag || '';
+            
+            const finalUsername = tag.replace(/text/g, proxyEntry.name);
+
             const webhookOptions = {
                 content: newContent,
-                username: proxyEntry.name,
+                username: finalUsername || proxyEntry.name,
                 avatarURL: proxyEntry.avatar,
             };
 
