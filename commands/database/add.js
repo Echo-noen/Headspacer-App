@@ -42,7 +42,7 @@ module.exports = {
         const avatarUrl = interaction.options.getString('avatar');
         const account = interaction.user.id;
 
-        if (!proxy.includes('text')) {
+        if (proxy && !proxy.includes('text')) {
             return interaction.reply({content: 'Error: The proxy must contain the word "text".', ephemeral: true });
         }
 
